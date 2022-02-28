@@ -30,7 +30,6 @@ int main(void)
 
     int circle_x = screen_width / 3;
     int circle_y = screen_height / 3;
-    float radius = 30;
 
     InitWindow(screen_width, screen_height, "Sample Project with Raylib");
 
@@ -41,24 +40,13 @@ int main(void)
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
 
-    	if (IsKeyDown(KEY_UP))
-    	{
-    		circle_y -= 2;
-    	}
-    	else if (IsKeyDown(KEY_DOWN))
-    	{
-    		circle_y = circle_y + 2;
-    	}
-
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
 
             ClearBackground(RAYWHITE);
 
-            DrawText("Raylib is working. Press Up or Down!", screen_width/5, screen_height/5, 40, LIGHTGRAY);
-
-            DrawCircle(circle_x, circle_y, radius, MAROON);
+            DrawText("Raylib is working!", screen_width/5, screen_height/5, 40, LIGHTGRAY);
 
             DrawFPS(10, 10);
 
