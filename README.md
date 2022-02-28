@@ -5,6 +5,9 @@ Compiled with `winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64-9.0.0-r3`
 
 Library compiled with `GRAPHICS = GRAPHICS_API_OPENGL_21` switch.
 
+## Preview
+![](preview.gif)
+
 ## Build for Linux
 Linux library is added to `lib\linux` and can be using `debuglinux configuration` in eclipse.
 
