@@ -28,9 +28,6 @@ int main(void)
     const int screen_width = 800;
     const int screen_height = 600;
 
-    int circle_x = screen_width / 3;
-    int circle_y = screen_height / 3;
-
     InitWindow(screen_width, screen_height, "Sample Project with Raylib");
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
@@ -46,9 +43,9 @@ int main(void)
 
             ClearBackground(RAYWHITE);
 
-            DrawText("Raylib is working!", screen_width/5, screen_height/5, 40, LIGHTGRAY);
+            DrawText("Raylib is working!", 5, screen_height - 55, 50, LIGHTGRAY);
 
-            DrawFPS(10, 10);
+            //DrawFPS(10, 10);
 
         EndDrawing();
         //----------------------------------------------------------------------------------
